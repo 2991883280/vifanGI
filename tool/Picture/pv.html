@@ -1,0 +1,84 @@
+   <!DOCTYPE html>
+<html lang="zh">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>维帆图床</title>
+		
+<link rel="stylesheet" href="http://vifan.cn/tool/Picture/s.css" />
+		<link rel="stylesheet" href="http://vifan.cn/tool/Picture/layui/css/layui.css" />
+		<link rel="icon" href="favicon.ico" />
+	
+
+
+    <script>  
+           var textCopy=function (data) {
+                var f=document.createElement("form");
+                f.id="copy-"+Date.parse(new Date());
+                f.onsubmit=function(){return false};
+                f.style="opacity: 0;height: 1px;width: 1px;overflow: hidden;position:fixed;top: -1;left: -1;z-index: -1;"
+                f.innerHTML=`<button onclick='story.select();document.execCommand("Copy");'></button>
+                <textarea name="story">${data}</textarea>`;
+                document.body.appendChild(f);
+                document.querySelector(`#${f.id}>button`).click();  
+                document.body.removeChild(document.getElementById(f.id));
+alert("复制成功");
+            } 
+    </script>
+
+</head>
+
+	<body class="layui-container">
+		<div class="layui-row">
+			<div class="layui-col-sm1 jsxs-title"> </div>
+								<div class="layui-col-sm2 jsxs-title"> </div>
+			<div class="layui-col-sm4">
+			</div>
+			<div class="layui-col-sm1 jsxs-title"> </div>
+		</div>
+
+		<div class="jsxs-sc">
+			<div class="layui-row">
+				<input type="file" accept="image/*" multiple="">
+				<button type="button" class="layui-btn">选择本地图片</button>
+				<button type="button" class="layui-btn layui-btn-normal" onclick="url_uploaddj()">上传远程图片</button>
+	
+			
+    <button onclick="textCopy(document.getElementById('url-res-txt').value)" class="layui-btn" >复制外链</button> 
+            
+	</div>
+		</div>
+
+		<textarea id="url-res-txt" readonly="readonly" class="form-control"  placeholder="上传后的图片外链地址将显示在此处、下方会同时显示外链地址"></textarea>
+		<div class="preview">
+		</div>
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+		<script type="text/javascript" src="http://vifan.cn/tool/Picture/layui/layui.all.js"></script>
+		<script type="text/javascript" src="https://img.oioweb.cn/js/index.js?v=1.0"></script>
+	</body>
+
+</html>
