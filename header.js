@@ -2,7 +2,7 @@ document.writeln("<!DOCTYPE html>");
 document.writeln("<html>");
 document.writeln("	<head>");
 document.writeln("");
-document.writeln("<base href=\"http://vifan.cn/\" />");
+document.writeln("<base href=\"https://2991883280.github.io/vifanGI/\" />");
 document.writeln("		<title>");
 document.writeln("		维帆Gi会社-极客的玩具");
 document.writeln("		</title>");
