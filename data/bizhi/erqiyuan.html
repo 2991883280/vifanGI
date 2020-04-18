@@ -45,23 +45,48 @@
        <div class="panel form-element-padding">
 
             <div class="panel-body" style="padding-bottom:30px;">
-<table  width="100%" align="center" height="100%" border="0" cellpadding="0" cellspacing="0">
-<tr>
 
-        </td>
-</tr>
-<tr>
-        <td>
+<input onclick="qh()" type="button" value="切换图片" style="width:100%; --background: #275efe;
+  --text: #fff;
+  --font-size: 16px;
+  --duration: .5s;
+  --move-hover: -4px;
+  --shadow: 0 2px 8px -1px rgba(39, 94, 254, 0.32);
+  --shadow-hover: 0 4px 20px -2px rgba(39, 94, 254, 0.5);
+  padding: 16px 32px;
+  font-family: 'Roboto';
+  font-weight: 500;
+  line-height: var(--font-size);
+  border-radius: 24px;
+  display: block;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: var(--font-size);
+  letter-spacing: .5px;
+  background: var(--background);
+  color: var(--text);
+  box-shadow: var(--shadow);
+  -webkit-transform: translateY(var(--y));
+          transform: translateY(var(--y));
+  transition: box-shadow var(--duration) ease, -webkit-transform var(--duration) ease;
+  transition: transform var(--duration) ease, box-shadow var(--duration) ease;
+  transition: transform var(--duration) ease, box-shadow var(--duration) ease, -webkit-transform var(--duration) ease;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: none;margin-top:20px;margin-buttom:20px;"> 
 
-  <img src="http://api.moonwl.cn/api/tu/acg.php" class="img-thumbnail">
+<script type="text/javascript">
+//切换图片,url参数说明：此参数实际对图片没有啥用，只是为了防止JS缓存导致图片切换不了！
 
-           <a href="javascript:location.reload(true)"> <button type="button"  class="btn btn-primary btn-lg btn-block">换个照片</button>   </a>
-
-
-
-
-</tr>
-</table>
-
+	var rand=Math.random();//获取随机数字
+document.getElementById("acg").src="http://api.mtyqx.cn/tapi/random.php?url="+rand;//设置图片src
+    function qh(){//点击按钮切换图片
+var rand=Math.random();
+       document.getElementById("acg").src="http://api.mtyqx.cn/tapi/random.php?url="+rand;
+	   rand=null;//JS释放内存
+        }	
+		
+  </script>
 </body>
 </html>
