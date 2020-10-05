@@ -69,7 +69,7 @@ document.writeln("");
 document.writeln("        <li > <a  href=\'./help.html\' >帮助  </a> </li>");
 document.writeln("   <li > <a class=\'tree-toggle nav-header\'> 更多  <span class=\'fa-angle-right fa right-arrow text-right\'></span> </a>");
 document.writeln("          <ul class=\'nav nav-list tree\'>");
-document.writeln("          <li><a href=\'http://dofan.ltd\'>回忆逗帆</a></li>");
+document.writeln("          <li><a href=\'http://viyrs.com\'>维帆官网</a></li>");
 document.writeln("          <li><a href=\'./feedback/Privacy Policy.html\'>隐私政策</a></li>");
 document.writeln("             <li><a href=\'https://jq.qq.com/?_wv=1027&k=5EDlld4\' target=\'");
 document.writeln("_blank\'>加入Q群</a></li>");
