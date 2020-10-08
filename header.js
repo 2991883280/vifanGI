@@ -2,7 +2,7 @@ document.writeln("<!DOCTYPE html>");
 document.writeln("<html>");
 document.writeln("	<head>");
 document.writeln("");
-document.writeln("<base href=\"https://vit.viyrs.com/\" />");
+document.writeln("<base href=\"http://vit.viyrs.com/\" />");
 document.writeln("		<title>");
 document.writeln("		维·米饭-维米帆龄Gi会社");
 document.writeln("		</title>");
